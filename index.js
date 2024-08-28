@@ -1,6 +1,6 @@
 const http = require('http');
 const fs = require('fs');
-
+const PORT=5500
 // Create the server
 const server = http.createServer((req, res) => {
     // Set the content type for the response
@@ -35,6 +35,6 @@ const server = http.createServer((req, res) => {
 });
 
 // Start the server and listen on port 5500
-server.listen(5100, () => {
-    console.log('Server is listening on port 5100');
+server.listen(PORT, () => {
+    console.log(`Server is listening on http://localhost:${PORT}`);
 });
